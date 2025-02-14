@@ -8,16 +8,21 @@
 
 #### Clone the Repository
 
+```
 git clone https://github.com/nikitasv457/Heart-Disease-Classifier.git
+```
 
 #### Run the Jupyter Notebook
 
+```
 jupyter notebook
+```
 
 Then, open heart_disease_classifier.ipynb and run all cells.
 
 #### Required Libraries (Imports)
 
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -33,3 +38,4 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import classification_report, confusion_matrix
+```
