@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <div class="form-container">
+        <form action="/" method="post">
+            <table>
+                <tr>
+                    <td><label>Age:</label></td>
+                    <td><input type="number" name="age" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Sex:</label></td>
+                    <td>
+                        <select name="sex">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Chest Pain Type (1-4) <br>
+                       &nbsp  1 = Typical Angina <br>
+                       &nbsp 2 = Atypical Angina<br>
+                       &nbsp 3 = Non-Anginal Pain<br>
+                       &nbsp 4 = Asymptomatic:</label></td>
+                    <td><input type="number" name="cp" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Resting Blood Pressure (mm Hg):</label></td>
+                    <td><input type="number" name="trestbps" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Serum Cholesterol (mg/dL):</label></td>
+                    <td><input type="number" name="chol" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Fasting Blood Sugar >120 mg/dL: <br>
+                        &nbsp   1 = High <br>
+                        &nbsp   0 = Normal <br>
+                    </label></td>
+                    <td>
+                        <select name="fbs">
+                            <option value="1">High (1)</option>
+                            <option value="0">Normal (0)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Resting ECG Results (0-2): <br>
+                        &nbsp   0 = Normal <br>
+                        &nbsp   1 = ST-T wave abnormality <br>
+                        &nbsp   2 = Probable LVH <br>
+
+                    </label></td>
+                    <td><input type="number" name="restecg" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Max Heart Rate Achieved:</label></td>
+                    <td><input type="number" name="thalach" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Exercise-Induced Angina:</label></td>
+                    <td>
+                        <select name="exang">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>ST Depression Induced (0.0 - 6.2):</label></td>
+                    <td><input type="number" name="oldpeak" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Slope of Peak Exercise ST Segment (0-2): <br>
+                        &nbsp  0 = Upsloping <br> 
+                        &nbsp  1 = Flat <br>
+                        &nbsp  2 = Downsloping <br>
+                    </label></td>
+                    <td><input type="number" name="slope" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Number of Major Vessels (0-3):</label></td>
+                    <td><input type="number" name="ca" step="any" required></td>
+                </tr>
+                <tr>
+                    <td><label>Thalassemia (0-3):
+                        &nbsp 1 = Normal <br>
+                        &nbsp 2 = Fixed Defect <br>
+                        &nbsp 3 = Reversible Defect <br>
+
+                    </label></td>
+                    <td><input type="number" name="thal" step="any" required></td>
+                </tr>
+            </table>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
