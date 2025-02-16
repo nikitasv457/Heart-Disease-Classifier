@@ -1,0 +1,67 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #e3f2fd; /* Very Light Blue */
+}
+
+/* Heading Styling */
+h1 {
+    color: #0d47a1; /* Dark Blue */
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    background: #ffffff; /* White Form Background */
+    padding: 25px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #90caf9; /* Soft Blue Border */
+    width: 400px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #90caf9; /* Light Blue Border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1565c0; /* Deep Blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #0d47a1; /* Darker Blue */
+}
+
+/* Table for Alignment */
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+/* Label Styling */
+td {
+    padding: 8px;
+    text-align: left;
+    color: #0d47a1; /* Dark Blue */
+    font-weight: bold;
+}
