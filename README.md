@@ -6,13 +6,31 @@
 
 #### Before running the project, make sure you have Python 3.x installed along with the required libraries.
 
-#### Clone the Repository
+#### 1. Clone the Repository
 
 ```
 git clone https://github.com/nikitasv457/Heart-Disease-Classifier.git
 ```
+#### 2. Install Dependencies
+```
+pip install -r requirements.txt
+```
+#### 3. Train the model
+```
+python train.py
+```
+#### 3. Run the Web Application
+```
+python app.py
+```
+### 4. Access the Web App
+```
+http://127.0.0.1:5000/
+```
 
-#### Run the Jupyter Notebook
+#### Or alternatively
+
+#### 2. Run the Jupyter Notebook
 
 ```
 jupyter notebook
