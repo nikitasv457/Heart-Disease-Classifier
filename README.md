@@ -23,7 +23,7 @@ python train.py
 ```
 python app.py
 ```
-### 4. Access the Web App
+#### 4. Access the Web App
 ```
 http://127.0.0.1:5000/
 ```
