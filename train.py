@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score
 data = pd.read_csv("heart.xls")
 
 # Split into features and target
-X = data.drop(columns=["target"])  # Adjust column name if necessary
+X = data.drop(columns=["target"]) 
 y = data["target"]
 
 # Split dataset into training and testing sets
