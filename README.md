@@ -1,6 +1,6 @@
 # Heart-Disease-Classifier
 
-### This project aims to classify heart disease cases using machine learning models such as Random Forest, Decision Tree, kNN, SVM, and more. The dataset used is [Heart Disease Dataset from Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset?resource=download), which contains patient medical data to predict the likelihood of heart disease.
+### This project aims to classify heart disease cases using the Random Forest machine learning model. The dataset used is [Heart Disease Dataset from Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset?resource=download), which contains patient medical data to predict the likelihood of heart disease.
 
 ### Installation & Setup
 
